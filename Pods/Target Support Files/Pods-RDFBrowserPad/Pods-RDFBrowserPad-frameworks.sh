@@ -161,18 +161,18 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/BrightFutures-macOS/BrightFutures.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/FootlessParser-macOS/FootlessParser.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/NorthLayout-macOS/NorthLayout.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SwiftSparql-macOS/SwiftSparql.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/※ikemen-macOS/Ikemen.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/BrightFutures-iOS/BrightFutures.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FootlessParser-iOS/FootlessParser.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/NorthLayout-iOS/NorthLayout.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftSparql-iOS/SwiftSparql.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/※ikemen-iOS/Ikemen.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/BrightFutures-macOS/BrightFutures.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/FootlessParser-macOS/FootlessParser.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/NorthLayout-macOS/NorthLayout.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SwiftSparql-macOS/SwiftSparql.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/※ikemen-macOS/Ikemen.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/BrightFutures-iOS/BrightFutures.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FootlessParser-iOS/FootlessParser.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/NorthLayout-iOS/NorthLayout.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftSparql-iOS/SwiftSparql.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/※ikemen-iOS/Ikemen.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

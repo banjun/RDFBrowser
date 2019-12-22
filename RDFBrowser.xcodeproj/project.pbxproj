@@ -20,12 +20,26 @@
 		EA21940F23AF85E400095374 /* SubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA21940E23AF85E400095374 /* SubjectView.swift */; };
 		EA21941123AF8C4600095374 /* AutolayoutLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA21941023AF8C4600095374 /* AutolayoutLabel.swift */; };
 		EA21942323AF972F00095374 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA21942223AF972F00095374 /* WindowController.swift */; };
+		EACA438423AFAB10008796AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACA438323AFAB10008796AE /* AppDelegate.swift */; };
+		EACA438623AFAB10008796AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACA438523AFAB10008796AE /* SceneDelegate.swift */; };
+		EACA438823AFAB10008796AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACA438723AFAB10008796AE /* ViewController.swift */; };
+		EACA438B23AFAB10008796AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EACA438923AFAB10008796AE /* Main.storyboard */; };
+		EACA438D23AFAB10008796AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EACA438C23AFAB10008796AE /* Assets.xcassets */; };
+		EACA439023AFAB10008796AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EACA438E23AFAB10008796AE /* LaunchScreen.storyboard */; };
+		EACA439723AFAB6B008796AE /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACA439623AFAB6B008796AE /* Graph.swift */; };
+		EACA439B23AFAC92008796AE /* Pods_RDFBrowserPad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EACA439A23AFAC92008796AE /* Pods_RDFBrowserPad.framework */; };
+		EACA439D23AFAF09008796AE /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACA439C23AFAF09008796AE /* GraphView.swift */; };
+		EACA43A123AFB6B9008796AE /* RDFSSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA05BCCB23AF5C560062D9A9 /* RDFSSchema.swift */; };
+		EACA43A223AFB6B9008796AE /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA21940823AF79C200095374 /* Subject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14997D68ADB59F9666638379 /* Pods-RDFBrowserPad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RDFBrowserPad.debug.xcconfig"; path = "Target Support Files/Pods-RDFBrowserPad/Pods-RDFBrowserPad.debug.xcconfig"; sourceTree = "<group>"; };
 		29D9298D46A2BA9C9C6F8058 /* Pods-RDFBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RDFBrowser.debug.xcconfig"; path = "Target Support Files/Pods-RDFBrowser/Pods-RDFBrowser.debug.xcconfig"; sourceTree = "<group>"; };
+		429167E1B0191BB093019E25 /* Pods_RDFBrowserPad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RDFBrowserPad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		471BFD981897D26939F1BF47 /* Pods_RDFBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RDFBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7598FCF7B3ACF8ED6902E0A /* Pods-RDFBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RDFBrowser.release.xcconfig"; path = "Target Support Files/Pods-RDFBrowser/Pods-RDFBrowser.release.xcconfig"; sourceTree = "<group>"; };
+		CB8A09173694473CBC7B1486 /* Pods-RDFBrowserPad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RDFBrowserPad.release.xcconfig"; path = "Target Support Files/Pods-RDFBrowserPad/Pods-RDFBrowserPad.release.xcconfig"; sourceTree = "<group>"; };
 		EA05BCCB23AF5C560062D9A9 /* RDFSSchema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDFSSchema.swift; sourceTree = "<group>"; };
 		EA14DF4B23AF4EEE005EFD50 /* RDFBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RDFBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA14DF4E23AF4EEE005EFD50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +55,18 @@
 		EA21940E23AF85E400095374 /* SubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectView.swift; sourceTree = "<group>"; };
 		EA21941023AF8C4600095374 /* AutolayoutLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutolayoutLabel.swift; sourceTree = "<group>"; };
 		EA21942223AF972F00095374 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		EACA438123AFAB10008796AE /* RDFBrowserPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RDFBrowserPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EACA438323AFAB10008796AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EACA438523AFAB10008796AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EACA438723AFAB10008796AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EACA438A23AFAB10008796AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EACA438C23AFAB10008796AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EACA438F23AFAB10008796AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EACA439123AFAB10008796AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EACA439523AFAB18008796AE /* RDFBrowserPad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RDFBrowserPad.entitlements; sourceTree = "<group>"; };
+		EACA439623AFAB6B008796AE /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		EACA439A23AFAC92008796AE /* Pods_RDFBrowserPad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_RDFBrowserPad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EACA439C23AFAF09008796AE /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +78,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EACA437E23AFAB10008796AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EACA439B23AFAC92008796AE /* Pods_RDFBrowserPad.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		11952A2F2C4A44683461DBC7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EACA439A23AFAC92008796AE /* Pods_RDFBrowserPad.framework */,
 				471BFD981897D26939F1BF47 /* Pods_RDFBrowser.framework */,
+				429167E1B0191BB093019E25 /* Pods_RDFBrowserPad.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -68,6 +104,8 @@
 			children = (
 				29D9298D46A2BA9C9C6F8058 /* Pods-RDFBrowser.debug.xcconfig */,
 				B7598FCF7B3ACF8ED6902E0A /* Pods-RDFBrowser.release.xcconfig */,
+				14997D68ADB59F9666638379 /* Pods-RDFBrowserPad.debug.xcconfig */,
+				CB8A09173694473CBC7B1486 /* Pods-RDFBrowserPad.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -76,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				EA14DF4D23AF4EEE005EFD50 /* RDFBrowser */,
+				EA21941223AF8C4C00095374 /* Common */,
+				EACA438223AFAB10008796AE /* RDFBrowserPad */,
 				EA14DF4C23AF4EEE005EFD50 /* Products */,
 				6308E76479DD05244347C127 /* Pods */,
 				11952A2F2C4A44683461DBC7 /* Frameworks */,
@@ -86,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				EA14DF4B23AF4EEE005EFD50 /* RDFBrowser.app */,
+				EACA438123AFAB10008796AE /* RDFBrowserPad.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,12 +137,10 @@
 				EA14DF4E23AF4EEE005EFD50 /* AppDelegate.swift */,
 				EA21942223AF972F00095374 /* WindowController.swift */,
 				EA14DF5023AF4EEE005EFD50 /* ViewController.swift */,
-				EA05BCCB23AF5C560062D9A9 /* RDFSSchema.swift */,
-				EA21940823AF79C200095374 /* Subject.swift */,
 				EA21940A23AF7D3800095374 /* SubjectViewModel.swift */,
 				EA21940E23AF85E400095374 /* SubjectView.swift */,
 				EA21940C23AF840B00095374 /* VerbObjectPairView.swift */,
-				EA21941223AF8C4C00095374 /* Common */,
+				EACA439E23AFB6B0008796AE /* Common */,
 				EA14DF5223AF4EEF005EFD50 /* Assets.xcassets */,
 				EA14DF5423AF4EEF005EFD50 /* Main.storyboard */,
 				EA14DF5723AF4EEF005EFD50 /* Info.plist */,
@@ -111,6 +150,32 @@
 			sourceTree = "<group>";
 		};
 		EA21941223AF8C4C00095374 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EA05BCCB23AF5C560062D9A9 /* RDFSSchema.swift */,
+				EA21940823AF79C200095374 /* Subject.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EACA438223AFAB10008796AE /* RDFBrowserPad */ = {
+			isa = PBXGroup;
+			children = (
+				EACA439523AFAB18008796AE /* RDFBrowserPad.entitlements */,
+				EACA438323AFAB10008796AE /* AppDelegate.swift */,
+				EACA438523AFAB10008796AE /* SceneDelegate.swift */,
+				EACA438723AFAB10008796AE /* ViewController.swift */,
+				EACA439623AFAB6B008796AE /* Graph.swift */,
+				EACA439C23AFAF09008796AE /* GraphView.swift */,
+				EACA438923AFAB10008796AE /* Main.storyboard */,
+				EACA438C23AFAB10008796AE /* Assets.xcassets */,
+				EACA438E23AFAB10008796AE /* LaunchScreen.storyboard */,
+				EACA439123AFAB10008796AE /* Info.plist */,
+			);
+			path = RDFBrowserPad;
+			sourceTree = "<group>";
+		};
+		EACA439E23AFB6B0008796AE /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				EA21941023AF8C4600095374 /* AutolayoutLabel.swift */,
@@ -141,6 +206,25 @@
 			productReference = EA14DF4B23AF4EEE005EFD50 /* RDFBrowser.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EACA438023AFAB10008796AE /* RDFBrowserPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EACA439423AFAB10008796AE /* Build configuration list for PBXNativeTarget "RDFBrowserPad" */;
+			buildPhases = (
+				64DDD4433114A26FA2DA4C5A /* [CP] Check Pods Manifest.lock */,
+				EACA437D23AFAB10008796AE /* Sources */,
+				EACA437E23AFAB10008796AE /* Frameworks */,
+				EACA437F23AFAB10008796AE /* Resources */,
+				43EBBB91960E9C374FF93316 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RDFBrowserPad;
+			productName = RDFBrowserPad;
+			productReference = EACA438123AFAB10008796AE /* RDFBrowserPad.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -152,6 +236,9 @@
 				ORGANIZATIONNAME = banjun;
 				TargetAttributes = {
 					EA14DF4A23AF4EEE005EFD50 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					EACA438023AFAB10008796AE = {
 						CreatedOnToolsVersion = 11.3;
 					};
 				};
@@ -170,6 +257,7 @@
 			projectRoot = "";
 			targets = (
 				EA14DF4A23AF4EEE005EFD50 /* RDFBrowser */,
+				EACA438023AFAB10008796AE /* RDFBrowserPad */,
 			);
 		};
 /* End PBXProject section */
@@ -181,6 +269,16 @@
 			files = (
 				EA14DF5323AF4EEF005EFD50 /* Assets.xcassets in Resources */,
 				EA14DF5623AF4EEF005EFD50 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EACA437F23AFAB10008796AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EACA439023AFAB10008796AE /* LaunchScreen.storyboard in Resources */,
+				EACA438D23AFAB10008796AE /* Assets.xcassets in Resources */,
+				EACA438B23AFAB10008796AE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +301,45 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-RDFBrowser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43EBBB91960E9C374FF93316 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RDFBrowserPad/Pods-RDFBrowserPad-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RDFBrowserPad/Pods-RDFBrowserPad-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RDFBrowserPad/Pods-RDFBrowserPad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64DDD4433114A26FA2DA4C5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RDFBrowserPad-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -246,6 +383,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EACA437D23AFAB10008796AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EACA439723AFAB6B008796AE /* Graph.swift in Sources */,
+				EACA439D23AFAF09008796AE /* GraphView.swift in Sources */,
+				EACA438823AFAB10008796AE /* ViewController.swift in Sources */,
+				EACA43A123AFB6B9008796AE /* RDFSSchema.swift in Sources */,
+				EACA438423AFAB10008796AE /* AppDelegate.swift in Sources */,
+				EACA43A223AFB6B9008796AE /* Subject.swift in Sources */,
+				EACA438623AFAB10008796AE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -255,6 +406,22 @@
 				EA14DF5523AF4EEF005EFD50 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EACA438923AFAB10008796AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EACA438A23AFAB10008796AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EACA438E23AFAB10008796AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EACA438F23AFAB10008796AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -411,6 +578,57 @@
 			};
 			name = Release;
 		};
+		EACA439223AFAB10008796AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14997D68ADB59F9666638379 /* Pods-RDFBrowserPad.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RDFBrowserPad/RDFBrowserPad.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = FPZK4WRGW7;
+				INFOPLIST_FILE = RDFBrowserPad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.banjun.exp.RDFBrowserPad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EACA439323AFAB10008796AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB8A09173694473CBC7B1486 /* Pods-RDFBrowserPad.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RDFBrowserPad/RDFBrowserPad.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = FPZK4WRGW7;
+				INFOPLIST_FILE = RDFBrowserPad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.banjun.exp.RDFBrowserPad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -428,6 +646,15 @@
 			buildConfigurations = (
 				EA14DF5C23AF4EEF005EFD50 /* Debug */,
 				EA14DF5D23AF4EEF005EFD50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EACA439423AFAB10008796AE /* Build configuration list for PBXNativeTarget "RDFBrowserPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EACA439223AFAB10008796AE /* Debug */,
+				EACA439323AFAB10008796AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

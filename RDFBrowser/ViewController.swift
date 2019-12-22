@@ -222,21 +222,8 @@ final class ViewController: NSViewController, NSTableViewDataSource, NSTableView
     }
 }
 
-struct RDFTypeSchema: Codable, Equatable {
-    var type: String
-    var label: String?
-    var comment: String?
-    var subClassOf: String?
-}
-
 struct Count: Codable {
     var count: Int
-}
-
-struct SubjectSampleResult: Codable {
-    var subject: String
-    var label: String?
-    var name: String?
 }
 
 final class NodesView: NSView {

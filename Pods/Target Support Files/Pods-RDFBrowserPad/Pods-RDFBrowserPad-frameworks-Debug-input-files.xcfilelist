@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-RDFBrowserPad/Pods-RDFBrowserPad-frameworks.sh
+${BUILT_PRODUCTS_DIR}/BrightFutures-iOS/BrightFutures.framework
+${BUILT_PRODUCTS_DIR}/FootlessParser-iOS/FootlessParser.framework
+${BUILT_PRODUCTS_DIR}/NorthLayout-iOS/NorthLayout.framework
+${BUILT_PRODUCTS_DIR}/SwiftSparql-iOS/SwiftSparql.framework
+${BUILT_PRODUCTS_DIR}/※ikemen-iOS/Ikemen.framework

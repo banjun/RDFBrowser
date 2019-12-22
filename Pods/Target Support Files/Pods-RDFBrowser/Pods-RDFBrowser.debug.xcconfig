@@ -1,7 +1,7 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BrightFutures" "${PODS_CONFIGURATION_BUILD_DIR}/FootlessParser" "${PODS_CONFIGURATION_BUILD_DIR}/NorthLayout" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftSparql" "${PODS_CONFIGURATION_BUILD_DIR}/※ikemen"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BrightFutures-macOS" "${PODS_CONFIGURATION_BUILD_DIR}/FootlessParser-macOS" "${PODS_CONFIGURATION_BUILD_DIR}/NorthLayout-macOS" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftSparql-macOS" "${PODS_CONFIGURATION_BUILD_DIR}/※ikemen-macOS"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BrightFutures/BrightFutures.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/FootlessParser/FootlessParser.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/NorthLayout/NorthLayout.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftSparql/SwiftSparql.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/※ikemen/Ikemen.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BrightFutures-macOS/BrightFutures.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/FootlessParser-macOS/FootlessParser.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/NorthLayout-macOS/NorthLayout.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftSparql-macOS/SwiftSparql.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/※ikemen-macOS/Ikemen.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/../Frameworks' '@loader_path/Frameworks'
 OTHER_LDFLAGS = $(inherited) -framework "AppKit" -framework "BrightFutures" -framework "FootlessParser" -framework "Ikemen" -framework "NorthLayout" -framework "SwiftSparql"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS

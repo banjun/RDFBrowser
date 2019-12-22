@@ -1,0 +1,12 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BrightFutures-iOS" "${PODS_CONFIGURATION_BUILD_DIR}/FootlessParser-iOS" "${PODS_CONFIGURATION_BUILD_DIR}/NorthLayout-iOS" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftSparql-iOS" "${PODS_CONFIGURATION_BUILD_DIR}/※ikemen-iOS"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BrightFutures-iOS/BrightFutures.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/FootlessParser-iOS/FootlessParser.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/NorthLayout-iOS/NorthLayout.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftSparql-iOS/SwiftSparql.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/※ikemen-iOS/Ikemen.framework/Headers"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_LDFLAGS = $(inherited) -framework "BrightFutures" -framework "FootlessParser" -framework "Ikemen" -framework "NorthLayout" -framework "SwiftSparql" -framework "UIKit"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES
