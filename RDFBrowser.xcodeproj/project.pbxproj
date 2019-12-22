@@ -3,17 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D47A7C162CBCD424DDC9919 /* Pods_RDFBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 471BFD981897D26939F1BF47 /* Pods_RDFBrowser.framework */; };
+		EA05BCCC23AF5C560062D9A9 /* RDFSSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA05BCCB23AF5C560062D9A9 /* RDFSSchema.swift */; };
 		EA14DF4F23AF4EEE005EFD50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA14DF4E23AF4EEE005EFD50 /* AppDelegate.swift */; };
 		EA14DF5123AF4EEE005EFD50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA14DF5023AF4EEE005EFD50 /* ViewController.swift */; };
 		EA14DF5323AF4EEF005EFD50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA14DF5223AF4EEF005EFD50 /* Assets.xcassets */; };
 		EA14DF5623AF4EEF005EFD50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA14DF5423AF4EEF005EFD50 /* Main.storyboard */; };
+		EA21940723AF67D600095374 /* NibLessLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA21940623AF67D600095374 /* NibLessLoadable.swift */; };
+		EA21940923AF79C200095374 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA21940823AF79C200095374 /* Subject.swift */; };
+		EA21940B23AF7D3800095374 /* SubjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA21940A23AF7D3800095374 /* SubjectViewModel.swift */; };
+		EA21940D23AF840B00095374 /* VerbObjectPairView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA21940C23AF840B00095374 /* VerbObjectPairView.swift */; };
+		EA21940F23AF85E400095374 /* SubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA21940E23AF85E400095374 /* SubjectView.swift */; };
+		EA21941123AF8C4600095374 /* AutolayoutLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA21941023AF8C4600095374 /* AutolayoutLabel.swift */; };
+		EA21942323AF972F00095374 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA21942223AF972F00095374 /* WindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29D9298D46A2BA9C9C6F8058 /* Pods-RDFBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RDFBrowser.debug.xcconfig"; path = "Target Support Files/Pods-RDFBrowser/Pods-RDFBrowser.debug.xcconfig"; sourceTree = "<group>"; };
+		471BFD981897D26939F1BF47 /* Pods_RDFBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RDFBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7598FCF7B3ACF8ED6902E0A /* Pods-RDFBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RDFBrowser.release.xcconfig"; path = "Target Support Files/Pods-RDFBrowser/Pods-RDFBrowser.release.xcconfig"; sourceTree = "<group>"; };
+		EA05BCCB23AF5C560062D9A9 /* RDFSSchema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDFSSchema.swift; sourceTree = "<group>"; };
 		EA14DF4B23AF4EEE005EFD50 /* RDFBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RDFBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA14DF4E23AF4EEE005EFD50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA14DF5023AF4EEE005EFD50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -21,6 +34,13 @@
 		EA14DF5523AF4EEF005EFD50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA14DF5723AF4EEF005EFD50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA14DF5823AF4EEF005EFD50 /* RDFBrowser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RDFBrowser.entitlements; sourceTree = "<group>"; };
+		EA21940623AF67D600095374 /* NibLessLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLessLoadable.swift; sourceTree = "<group>"; };
+		EA21940823AF79C200095374 /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		EA21940A23AF7D3800095374 /* SubjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectViewModel.swift; sourceTree = "<group>"; };
+		EA21940C23AF840B00095374 /* VerbObjectPairView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerbObjectPairView.swift; sourceTree = "<group>"; };
+		EA21940E23AF85E400095374 /* SubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectView.swift; sourceTree = "<group>"; };
+		EA21941023AF8C4600095374 /* AutolayoutLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutolayoutLabel.swift; sourceTree = "<group>"; };
+		EA21942223AF972F00095374 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +48,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D47A7C162CBCD424DDC9919 /* Pods_RDFBrowser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11952A2F2C4A44683461DBC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				471BFD981897D26939F1BF47 /* Pods_RDFBrowser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6308E76479DD05244347C127 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29D9298D46A2BA9C9C6F8058 /* Pods-RDFBrowser.debug.xcconfig */,
+				B7598FCF7B3ACF8ED6902E0A /* Pods-RDFBrowser.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EA14DF4223AF4EEE005EFD50 = {
 			isa = PBXGroup;
 			children = (
 				EA14DF4D23AF4EEE005EFD50 /* RDFBrowser */,
 				EA14DF4C23AF4EEE005EFD50 /* Products */,
+				6308E76479DD05244347C127 /* Pods */,
+				11952A2F2C4A44683461DBC7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,13 +94,29 @@
 			isa = PBXGroup;
 			children = (
 				EA14DF4E23AF4EEE005EFD50 /* AppDelegate.swift */,
+				EA21942223AF972F00095374 /* WindowController.swift */,
 				EA14DF5023AF4EEE005EFD50 /* ViewController.swift */,
+				EA05BCCB23AF5C560062D9A9 /* RDFSSchema.swift */,
+				EA21940823AF79C200095374 /* Subject.swift */,
+				EA21940A23AF7D3800095374 /* SubjectViewModel.swift */,
+				EA21940E23AF85E400095374 /* SubjectView.swift */,
+				EA21940C23AF840B00095374 /* VerbObjectPairView.swift */,
+				EA21941223AF8C4C00095374 /* Common */,
 				EA14DF5223AF4EEF005EFD50 /* Assets.xcassets */,
 				EA14DF5423AF4EEF005EFD50 /* Main.storyboard */,
 				EA14DF5723AF4EEF005EFD50 /* Info.plist */,
 				EA14DF5823AF4EEF005EFD50 /* RDFBrowser.entitlements */,
 			);
 			path = RDFBrowser;
+			sourceTree = "<group>";
+		};
+		EA21941223AF8C4C00095374 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EA21941023AF8C4600095374 /* AutolayoutLabel.swift */,
+				EA21940623AF67D600095374 /* NibLessLoadable.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,9 +126,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA14DF5B23AF4EEF005EFD50 /* Build configuration list for PBXNativeTarget "RDFBrowser" */;
 			buildPhases = (
+				173D0B7C31C28BE55D0C2A12 /* [CP] Check Pods Manifest.lock */,
 				EA14DF4723AF4EEE005EFD50 /* Sources */,
 				EA14DF4823AF4EEE005EFD50 /* Frameworks */,
 				EA14DF4923AF4EEE005EFD50 /* Resources */,
+				957E5EA44B2CF6BBAFAB9D29 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,13 +186,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		173D0B7C31C28BE55D0C2A12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RDFBrowser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		957E5EA44B2CF6BBAFAB9D29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RDFBrowser/Pods-RDFBrowser-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RDFBrowser/Pods-RDFBrowser-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RDFBrowser/Pods-RDFBrowser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EA14DF4723AF4EEE005EFD50 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA21941123AF8C4600095374 /* AutolayoutLabel.swift in Sources */,
+				EA21942323AF972F00095374 /* WindowController.swift in Sources */,
+				EA21940723AF67D600095374 /* NibLessLoadable.swift in Sources */,
+				EA21940923AF79C200095374 /* Subject.swift in Sources */,
+				EA21940D23AF840B00095374 /* VerbObjectPairView.swift in Sources */,
 				EA14DF5123AF4EEE005EFD50 /* ViewController.swift in Sources */,
 				EA14DF4F23AF4EEE005EFD50 /* AppDelegate.swift in Sources */,
+				EA05BCCC23AF5C560062D9A9 /* RDFSSchema.swift in Sources */,
+				EA21940B23AF7D3800095374 /* SubjectViewModel.swift in Sources */,
+				EA21940F23AF85E400095374 /* SubjectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +375,7 @@
 		};
 		EA14DF5C23AF4EEF005EFD50 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29D9298D46A2BA9C9C6F8058 /* Pods-RDFBrowser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = RDFBrowser/RDFBrowser.entitlements;
@@ -285,6 +394,7 @@
 		};
 		EA14DF5D23AF4EEF005EFD50 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7598FCF7B3ACF8ED6902E0A /* Pods-RDFBrowser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = RDFBrowser/RDFBrowser.entitlements;

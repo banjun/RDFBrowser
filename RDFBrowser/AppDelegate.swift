@@ -1,26 +1,18 @@
-//
-//  AppDelegate.swift
-//  RDFBrowser
-//
-//  Created by BAN Jun on 2019/12/22.
-//  Copyright © 2019 banjun. All rights reserved.
-//
-
 import Cocoa
+import Ikemen
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate {
-
-
-
-    func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+final class AppDelegate: NSObject, NSApplicationDelegate {
+    func applicationDidFinishLaunching(_ notification: Notification) {
+        [("im@sparql", "https://sparql.crssnky.xyz/spql/imas/query"),
+         ("PrismDB", "https://prismdb.takanakahiko.me/sparql")].forEach {
+            let title = $0.0
+            let endpoint = URL(string: $0.1)!
+            let wc = WindowController(contentViewController: ViewController(endpoint: endpoint)) ※ {
+                $0.window?.title = title
+                $0.window?.setFrameAutosaveName(title)
+                }
+            wc.showWindow(nil)
+        }
     }
-
-    func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
-    }
-
-
 }
-
