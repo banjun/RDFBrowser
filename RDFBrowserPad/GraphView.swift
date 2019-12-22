@@ -21,7 +21,7 @@ final class GraphView: UIView {
     }
     private lazy var edgePathsLayer: CAShapeLayer = .init() ※ {
         $0.lineWidth = 4
-        $0.strokeColor = UIColor.tertiaryLabel.cgColor
+        $0.strokeColor = UIColor.systemPink.cgColor
         edgesZPositionView.layer.addSublayer($0)
     }
 
@@ -83,7 +83,8 @@ final class GraphView: UIView {
             guard (!nodeViews.contains {$0.node == n}) else { return nil }
             return NodeView(node: n) ※ {
                 nodesZPositionView.addSubview($0)
-                $0.center = CGPoint(x: nodesZPositionView.bounds.midX + CGFloat(arc4random_uniform(500)) - 250,
+                let width = bounds.width
+                $0.center = CGPoint(x: nodesZPositionView.bounds.midX + CGFloat(arc4random_uniform(UInt32(width))) - width / 2,
                                     y: nodesZPositionView.bounds.midY + CGFloat(arc4random_uniform(100)) - 50)
 
                 nodeBehavior.addItem($0)
@@ -100,7 +101,8 @@ final class GraphView: UIView {
 
             return EdgeView(sourceView: sourceNodeView, edge: e, destinationView: destinationNodeView) ※ {
                 edgesZPositionView.addSubview($0)
-                $0.center = CGPoint(x: edgesZPositionView.bounds.midX + CGFloat(arc4random_uniform(500)) - 250,
+                let width = bounds.width
+                $0.center = CGPoint(x: edgesZPositionView.bounds.midX + CGFloat(arc4random_uniform(UInt32(width))) - width / 2,
                                     y: edgesZPositionView.bounds.midY + CGFloat(arc4random_uniform(100)) - 50)
 
                 edgesZPositionView.addSubview($0)
@@ -128,16 +130,6 @@ final class GraphView: UIView {
                     b.frictionTorque = 0
                     b.length = length * 2
                 })
-
-                let lineView = UIView() ※ {$0.backgroundColor = .systemRed}
-                _ = edgesZPositionView.northLayoutFormat([:], [
-                    "source": sourceNodeView,
-                    "destination": destinationNodeView,
-                    "line": lineView])
-                lineView.leftAnchor.constraint(equalTo: sourceNodeView.centerXAnchor).isActive = true
-                lineView.topAnchor.constraint(equalTo: sourceNodeView.centerYAnchor).isActive = true
-                lineView.rightAnchor.constraint(equalTo: destinationNodeView.centerXAnchor).isActive = true
-                lineView.bottomAnchor.constraint(equalTo: destinationNodeView.centerYAnchor).isActive = true
             }
         })
 
@@ -172,6 +164,11 @@ final class GraphView: UIView {
             }
         }
     }
+
+    func hitNode(_ p: CGPoint) -> Subject? {
+        guard let hit = hitTest(p, with: nil) else { return nil }
+        return nodeViews.first {$0 === hit}?.node
+    }
 }
 
 final class NodeView<Node: DisplayNameConvertible>: UIView {
@@ -182,8 +179,8 @@ final class NodeView<Node: DisplayNameConvertible>: UIView {
         self.node = node
         super.init(frame: .zero)
 
-        backgroundColor = .tertiarySystemBackground
-        layer.borderColor = UIColor.secondarySystemGroupedBackground.cgColor
+        backgroundColor = .systemGroupedBackground
+        layer.borderColor = UIColor.secondarySystemBackground.cgColor
         layer.borderWidth = 2
         layer.cornerRadius = 8
 
@@ -218,7 +215,7 @@ final class EdgeView<Node: Equatable, Label: Equatable & DisplayNameConvertible>
         let autolayout = northLayoutFormat([:], [
             "label": UILabel() ※ {
                 $0.text = edge.label.displayName
-                $0.textColor = .label
+                $0.textColor = .secondaryLabel
                 $0.lineBreakMode = .byTruncatingMiddle
             },
             "arrow": arrowView])
