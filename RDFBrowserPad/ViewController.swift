@@ -84,7 +84,7 @@ final class ViewController: UIViewController {
                     self.graph.edges.append(contentsOf: samples.map {
                         RDFGraph.Edge(
                             source: Subject(iri: IRIRef(value: $0.subject), label: $0.label, name: $0.name, comment: nil),
-                            label: "a",
+                            label: RdfSchema.verb("type").value,
                             destination: hit)
                     })
             }
@@ -93,9 +93,11 @@ final class ViewController: UIViewController {
                 where: WhereClause(patterns: [.triple(.term(.iri(.ref(hit.iri))), .simple(Var("verb")), [.var(Var("object"))])]
                     + SwiftSparql.subject(Var("verb"))
                         .optional {$0.rdfsLabel(is: Var("verbLabel"))}
+                        .optional {$0.rdfsComment(is: Var("verbComment"))}
                         .triples
                     + SwiftSparql.subject(Var("object"))
                         .optional {$0.rdfsLabel(is: Var("objectLabel"))}
+                        .optional {$0.rdfsLabel(is: Var("objectComment"))}
                         .triples
                 ),
                 order: [.by(.RAND)],
@@ -105,7 +107,7 @@ final class ViewController: UIViewController {
                     RDFGraph.Edge(
                         source: hit,
                         label: pair.verbLabel ?? pair.verbName ?? pair.verb,
-                        destination: Subject(iri: IRIRef(value: pair.object), label: pair.objectLabel, name: pair.objectName, comment: nil))
+                        destination: Subject(iri: IRIRef(value: pair.object), label: pair.objectLabel, name: pair.objectName, comment: pair.objectComment))
                 })
             }
         }
@@ -116,7 +118,9 @@ private struct VerbObjectPairResult: Codable {
     var verb: String
     var verbLabel: String?
     var verbName: String?
+    var verbComment: String?
     var object: String
     var objectLabel: String?
     var objectName: String?
+    var objectComment: String?
 }
