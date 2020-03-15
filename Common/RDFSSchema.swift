@@ -21,6 +21,10 @@ extension TripleBuilder where State: TripleBuilderStateIncompleteSubjectType {
         .init(base: self, appendingVerb: RdfSchema.verb("type"), value: [.iriRef(iri)])
     }
 
+    func rdfType(is v: Var) -> TripleBuilder<State> {
+        .init(base: self, appendingVerb: RdfSchema.verb("type"), value: [.var(v)])
+    }
+
     func verb(v: Var, is o: Var) -> TripleBuilder<State> {
         .init(base: self, appendingVerb: .simple(v), value: [.var(o)])
     }
