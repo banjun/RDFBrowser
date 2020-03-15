@@ -8,6 +8,8 @@ protocol DisplayNameConvertible {
 
 struct Subject: Equatable, DisplayNameConvertible {
     var iri: IRIRef
+    var type: IRIRef?
+    var typeLabel: String?
     var label: String?
     var name: String?
     var comment: String?
@@ -23,6 +25,8 @@ struct RDFTypeSchema: Codable, Equatable {
 
 struct SubjectSampleResult: Codable {
     var subject: String
+    var type: String?
+    var typeLabel: String?
     var label: String?
     var name: String?
 }

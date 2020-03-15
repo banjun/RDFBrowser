@@ -20,9 +20,11 @@
 		EA21940F23AF85E400095374 /* SubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA21940E23AF85E400095374 /* SubjectView.swift */; };
 		EA21941123AF8C4600095374 /* AutolayoutLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA21941023AF8C4600095374 /* AutolayoutLabel.swift */; };
 		EA21942323AF972F00095374 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA21942223AF972F00095374 /* WindowController.swift */; };
+		EA7FA687241E3579003D9894 /* QueryAndResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7FA686241E3579003D9894 /* QueryAndResultsViewController.swift */; };
+		EA7FA689241E390B003D9894 /* SubjectOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7FA688241E390B003D9894 /* SubjectOverviewView.swift */; };
 		EACA438423AFAB10008796AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACA438323AFAB10008796AE /* AppDelegate.swift */; };
 		EACA438623AFAB10008796AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACA438523AFAB10008796AE /* SceneDelegate.swift */; };
-		EACA438823AFAB10008796AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACA438723AFAB10008796AE /* ViewController.swift */; };
+		EACA438823AFAB10008796AE /* SubjectGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACA438723AFAB10008796AE /* SubjectGraphViewController.swift */; };
 		EACA438B23AFAB10008796AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EACA438923AFAB10008796AE /* Main.storyboard */; };
 		EACA438D23AFAB10008796AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EACA438C23AFAB10008796AE /* Assets.xcassets */; };
 		EACA439023AFAB10008796AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EACA438E23AFAB10008796AE /* LaunchScreen.storyboard */; };
@@ -55,10 +57,12 @@
 		EA21940E23AF85E400095374 /* SubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectView.swift; sourceTree = "<group>"; };
 		EA21941023AF8C4600095374 /* AutolayoutLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutolayoutLabel.swift; sourceTree = "<group>"; };
 		EA21942223AF972F00095374 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		EA7FA686241E3579003D9894 /* QueryAndResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryAndResultsViewController.swift; sourceTree = "<group>"; };
+		EA7FA688241E390B003D9894 /* SubjectOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectOverviewView.swift; sourceTree = "<group>"; };
 		EACA438123AFAB10008796AE /* RDFBrowserPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RDFBrowserPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EACA438323AFAB10008796AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EACA438523AFAB10008796AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EACA438723AFAB10008796AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EACA438723AFAB10008796AE /* SubjectGraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectGraphViewController.swift; sourceTree = "<group>"; };
 		EACA438A23AFAB10008796AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EACA438C23AFAB10008796AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EACA438F23AFAB10008796AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -164,7 +168,9 @@
 				EACA439523AFAB18008796AE /* RDFBrowserPad.entitlements */,
 				EACA438323AFAB10008796AE /* AppDelegate.swift */,
 				EACA438523AFAB10008796AE /* SceneDelegate.swift */,
-				EACA438723AFAB10008796AE /* ViewController.swift */,
+				EA7FA686241E3579003D9894 /* QueryAndResultsViewController.swift */,
+				EACA438723AFAB10008796AE /* SubjectGraphViewController.swift */,
+				EA7FA688241E390B003D9894 /* SubjectOverviewView.swift */,
 				EACA439623AFAB6B008796AE /* Graph.swift */,
 				EACA439C23AFAF09008796AE /* GraphView.swift */,
 				EACA438923AFAB10008796AE /* Main.storyboard */,
@@ -387,11 +393,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA7FA687241E3579003D9894 /* QueryAndResultsViewController.swift in Sources */,
 				EACA439723AFAB6B008796AE /* Graph.swift in Sources */,
 				EACA439D23AFAF09008796AE /* GraphView.swift in Sources */,
-				EACA438823AFAB10008796AE /* ViewController.swift in Sources */,
+				EACA438823AFAB10008796AE /* SubjectGraphViewController.swift in Sources */,
 				EACA43A123AFB6B9008796AE /* RDFSSchema.swift in Sources */,
 				EACA438423AFAB10008796AE /* AppDelegate.swift in Sources */,
+				EA7FA689241E390B003D9894 /* SubjectOverviewView.swift in Sources */,
 				EACA43A223AFB6B9008796AE /* Subject.swift in Sources */,
 				EACA438623AFAB10008796AE /* SceneDelegate.swift in Sources */,
 			);
