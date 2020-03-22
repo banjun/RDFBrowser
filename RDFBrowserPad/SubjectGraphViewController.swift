@@ -4,8 +4,8 @@ import Ikemen
 import SwiftSparql
 
 final class SubjectGraphViewController: UIViewController {
-    private let graphView = GraphView()
-    private var graph: RDFGraph = .init(nodes: [], edges: []) {
+    private let graphView = GraphView<VerbLabel>()
+    private var graph: Graph<Subject, VerbLabel> = .init(nodes: [], edges: []) {
         didSet {
             graphView.graph = graph
         }
@@ -73,9 +73,9 @@ final class SubjectGraphViewController: UIViewController {
             let source = Subject(iri: IRIRef(value: initialSubject.subject), label: initialSubject.label, name: initialSubject.name, comment: nil)
             if let type = source.type {
                 self.graph.edges.append(
-                    RDFGraph.Edge(
+                    Graph<Subject, VerbLabel>.Edge(
                         source: source,
-                        label: RdfSchema.verb("type").value,
+                        label: .init(verb: RdfSchema.verb("type")),
                         destination: Subject(iri: type, label: source.typeLabel, name: nil, comment: nil))
                 )
             }
@@ -113,9 +113,9 @@ final class SubjectGraphViewController: UIViewController {
             Request(endpoint: endpoint, select: sampleQuery).fetch()
                 .onSuccess { (samples: [SubjectSampleResult]) in
                     self.graph.edges.append(contentsOf: samples.map {
-                        RDFGraph.Edge(
+                        Graph<Subject, VerbLabel>.Edge(
                             source: Subject(iri: IRIRef(value: $0.subject), type: $0.type.map {IRIRef(value: $0)}, typeLabel: $0.typeLabel, label: $0.label, name: $0.name, comment: nil),
-                            label: RdfSchema.verb("type").value,
+                            label: .init(verb: RdfSchema.verb("type")),
                             destination: hit)
                     })
             }
@@ -142,9 +142,9 @@ final class SubjectGraphViewController: UIViewController {
             limit: .limit(limit))
         Request(endpoint: self.endpoint, select: sampleQuery).fetch().onSuccess { (samples: [VerbObjectPairResult]) in
             self.graph.edges.append(contentsOf: samples.map { pair in
-                RDFGraph.Edge(
+                Graph<Subject, VerbLabel>.Edge(
                     source: hit,
-                    label: pair.verbLabel ?? pair.verbName ?? pair.verb,
+                    label: .init(pair),
                     destination: Subject(iri: IRIRef(value: pair.object), label: pair.objectLabel, name: pair.objectName, comment: pair.objectComment))
             })
         }
@@ -160,4 +160,30 @@ private struct VerbObjectPairResult: Codable {
     var objectLabel: String?
     var objectName: String?
     var objectComment: String?
+}
+
+struct VerbLabel: Equatable, DisplayNameConvertible {
+    var value: String
+    var displayName: String { value }
+
+    init(string: String) {
+        self.value = string
+    }
+
+    init(verb: IRIRef) {
+        let map = [
+            RdfSchema.verb("type").value: "a",
+            RDFSSchema.verb("label").value: "rdfs:label"]
+        self.value = map[verb.value] ?? verb.value
+    }
+}
+
+private extension VerbLabel {
+    init(_ pair: VerbObjectPairResult) {
+        if let string = pair.verbLabel ?? pair.verbName {
+            self.init(string: string)
+        } else {
+            self.init(verb: IRIRef(value: pair.verb))
+        }
+    }
 }

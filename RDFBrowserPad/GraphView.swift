@@ -3,8 +3,8 @@ import UIKit
 import NorthLayout
 import Ikemen
 
-final class GraphView: UIView {
-    var graph: RDFGraph {
+final class GraphView<Label: Equatable & DisplayNameConvertible>: UIView {
+    var graph: Graph<Subject, Label> {
         didSet {
             update()
         }
@@ -12,7 +12,7 @@ final class GraphView: UIView {
 
     private var nodeViews: [NodeView<Subject>] = []
     private var nodesZPositionView = UIView()
-    private var edgeViews: [EdgeView<Subject, Verb>] = []
+    private var edgeViews: [EdgeView<Subject, Label>] = []
     private var edgesZPositionView = UIView()
     private var edgePaths: [UIBezierPath] = [] {
         didSet {
@@ -179,8 +179,8 @@ final class NodeView<Node: DisplayNameConvertible>: UIView {
         self.node = node
         super.init(frame: .zero)
 
-        backgroundColor = .systemGroupedBackground
-        layer.borderColor = UIColor.secondarySystemBackground.cgColor
+        backgroundColor = .systemBackground
+        layer.borderColor = UIColor.secondarySystemFill.cgColor
         layer.borderWidth = 2
         layer.cornerRadius = 8
 
@@ -191,8 +191,10 @@ final class NodeView<Node: DisplayNameConvertible>: UIView {
                 $0.font = .boldSystemFont(ofSize: 20)
                 $0.textColor = .label
                 $0.lineBreakMode = .byTruncatingMiddle
+                $0.numberOfLines = 2
+                $0.textAlignment = .center
             }])
-        autolayout("H:|-[label(<=256)]-|")
+        autolayout("H:|-[label(<=192)]-|")
         autolayout("V:|-[label]-|")
         layoutIfNeeded()
     }
