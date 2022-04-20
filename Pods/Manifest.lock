@@ -1,17 +1,17 @@
 PODS:
-  - BrightFutures (8.0.0)
+  - BrightFutures (8.1.0)
   - FootlessParser (0.5.2)
   - NorthLayout (5.2.0):
     - FootlessParser (~> 0.4)
-  - SwiftSparql (0.4.0):
-    - SwiftSparql/BrightFutures (= 0.4.0)
-    - SwiftSparql/Core (= 0.4.0)
-  - SwiftSparql/BrightFutures (0.4.0):
+  - SwiftSparql (0.11.0):
+    - SwiftSparql/BrightFutures (= 0.11.0)
+    - SwiftSparql/Core (= 0.11.0)
+  - SwiftSparql/BrightFutures (0.11.0):
     - BrightFutures (~> 8.0)
     - SwiftSparql/Core
-  - SwiftSparql/Core (0.4.0):
+  - SwiftSparql/Core (0.11.0):
     - FootlessParser (~> 0.5)
-  - "※ikemen (0.6.0)"
+  - "※ikemen (0.7.0)"
 
 DEPENDENCIES:
   - NorthLayout
@@ -27,12 +27,12 @@ SPEC REPOS:
     - "※ikemen"
 
 SPEC CHECKSUMS:
-  BrightFutures: f8427b46feabaf73c5e71ace7d86d65dfbb47696
+  BrightFutures: 6a974d08b121658dc0e6b93f5dec5353f9c24a44
   FootlessParser: 521916d592fa6cba06cfca6f4b5d4f5a2d49175a
   NorthLayout: 308a58a8f7d96f316e6399ff6432f8769321bbdf
-  SwiftSparql: 7b732de3b38bed6828612e7b8659993e405b032c
-  "※ikemen": da47fe6e0acfbe241611221f4d98ade266bf50a2
+  SwiftSparql: be8f29a8554d896c47fd40ea6625f03c745cff95
+  "※ikemen": db03a47c165f9889af8260758087b49f6cdeee2f
 
 PODFILE CHECKSUM: ebb6fbc3820c8848d4572ac00f0dfaad00693753
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.11.3
